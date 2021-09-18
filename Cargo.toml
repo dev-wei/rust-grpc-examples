@@ -8,8 +8,21 @@ name = "helloworld-server"
 path = "src/helloworld/server.rs"
 
 [[bin]]
+name = "helloworld-server-blocking"
+path = "src/helloworld/server_blocking.rs"
+
+[[bin]]
 name = "helloworld-client"
 path = "src/helloworld/client.rs"
+
+[[bin]]
+name = "routeguide-server"
+path = "src/routeguide/server.rs"
+
+[[bin]]
+name = "routeguide-client"
+path = "src/routeguide/client.rs"
+
 
 [dependencies]
 tonic = { version = "0.5", features = ["tls", "compression"] }
